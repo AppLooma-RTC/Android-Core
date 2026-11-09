@@ -1101,6 +1101,8 @@ constructor(
             val isNewParticipant = !remoteParticipants.contains(participantIdentity)
 
             if (info.state == LivekitModels.ParticipantInfo.State.DISCONNECTED) {
+                // Keep the server's disconnect reason on the participant before it is dropped.
+                remoteParticipants[participantIdentity]?.recordDisconnectInfo(info)
                 handleParticipantDisconnect(participantIdentity)
             } else {
                 val participant = getOrCreateRemoteParticipant(participantIdentity, info)

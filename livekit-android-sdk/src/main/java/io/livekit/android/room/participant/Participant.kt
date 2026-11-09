@@ -364,6 +364,16 @@ open class Participant(
     }
 
     /**
+     * Remember the final info of a participant that just disconnected, so that
+     * `participantInfo.disconnectReason` is readable from the disconnect event.
+     * Does not reconcile tracks or metadata; the disconnect handling does that.
+     * @suppress
+     */
+    fun recordDisconnectInfo(info: LivekitModels.ParticipantInfo) {
+        participantInfo = info
+    }
+
+    /**
      * @suppress
      */
     open fun updateFromInfo(info: LivekitModels.ParticipantInfo) {
