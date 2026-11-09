@@ -99,7 +99,7 @@ internal object RTCModule {
                     PeerConnectionFactory.initialize(
                         PeerConnectionFactory.InitializationOptions
                             .builder(appContext)
-                            .setNativeLibraryName("lkjingle_peerconnection_so")
+                            .setNativeLibraryName("jingle_peerconnection_so")
                             .setInjectableLogger(
                                 { s, severity, s2 ->
                                     if (!Transport.enableWebRTCLogging) {
