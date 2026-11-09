@@ -18,7 +18,7 @@ package livekit;
 option go_package = "github.com/livekit/protocol/rpc";
 
 import "google/protobuf/empty.proto";
-import "livekit_analytics.proto";
+import "analytics.proto";
 
 service AnalyticsRecorderService {
   rpc IngestStats(stream livekit.AnalyticsStats) returns (google.protobuf.Empty){};

@@ -12,17 +12,17 @@
     kotlinx.serialization.KSerializer serializer(...);
 }
 
--keep,includedescriptorclasses class io.livekit.android.**$$serializer { *; }
--keepclassmembers class io.livekit.android.** {
+-keep,includedescriptorclasses class com.applooma.rtc.transport.**$$serializer { *; }
+-keepclassmembers class com.applooma.rtc.transport.** {
     *** Companion;
 }
--keepclasseswithmembers class io.livekit.android.** {
+-keepclasseswithmembers class com.applooma.rtc.transport.** {
     kotlinx.serialization.KSerializer serializer(...);
 }
 
 # WebRTC
 #########################################
--keep class livekit.org.webrtc.** { *; }
+-keep class org.webrtc.** { *; }
 
 # NIST sdp parser
 #########################################

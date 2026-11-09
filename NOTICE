@@ -84,3 +84,5 @@ package names inside the library are unchanged, because renaming them would mean
 rewriting every source file for no visible benefit to an integrator. The original
 copyright notices are retained in every source file, and the Apache License 2.0
 text is included in LICENSE.
+
+Modified by AppLooma LLC: packages, generated protobuf classes and public entry points renamed; WebRTC dependency switched to the unprefixed build of the same version.

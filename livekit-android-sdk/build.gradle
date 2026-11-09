@@ -10,7 +10,7 @@ plugins {
 }
 
 android {
-    namespace 'io.livekit.android'
+    namespace 'com.applooma.rtc.transport'
     compileSdkVersion androidSdk.compileVersion
 
     defaultConfig {
@@ -61,7 +61,8 @@ android {
         buildConfig = true
     }
     kotlinOptions {
-        freeCompilerArgs = ["-Xinline-classes", "-opt-in=kotlin.RequiresOptIn", "-opt-in=io.livekit.android.annotations.Beta"]
+        moduleName = 'applooma-rtc-transport'
+        freeCompilerArgs = ["-Xinline-classes", "-opt-in=kotlin.RequiresOptIn", "-opt-in=com.applooma.rtc.transport.annotations.Beta"]
         jvmTarget = java_version
     }
 
@@ -105,11 +106,11 @@ tasks.withType(Test) {
 }
 
 jacocoAndroidUnitTestReport {
-    excludes.add('livekit/**')
+    excludes.add('com/applooma/rtc/transport/proto/**')
 }
 
 dokkaHtml {
-    moduleName.set("livekit-android-sdk")
+    moduleName.set('applooma-rtc-transport')
     dokkaSourceSets {
         configureEach {
             skipEmptyPackages.set(true)

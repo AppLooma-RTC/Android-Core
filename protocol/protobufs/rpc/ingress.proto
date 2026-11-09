@@ -19,7 +19,7 @@ package rpc;
 option go_package = "github.com/livekit/protocol/rpc";
 
 import "options.proto";
-import "livekit_ingress.proto";
+import "ingress.proto";
 import "google/protobuf/empty.proto";
 
 service IngressInternal {

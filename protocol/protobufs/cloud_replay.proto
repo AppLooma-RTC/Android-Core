@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package replay;
 
+option java_package = "com.applooma.rtc.transport.proto";
 option go_package = "github.com/livekit/protocol/replay";
 option csharp_namespace = "LiveKit.Proto";
 option ruby_package = "LiveKit::Proto";

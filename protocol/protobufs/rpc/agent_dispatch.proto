@@ -19,7 +19,7 @@ package rpc;
 option go_package = "github.com/livekit/protocol/rpc";
 
 import "options.proto";
-import "livekit_agent_dispatch.proto";
+import "agent_dispatch.proto";
 
 service AgentDispatchInternal {
   rpc CreateDispatch(livekit.AgentDispatch) returns (livekit.AgentDispatch) {

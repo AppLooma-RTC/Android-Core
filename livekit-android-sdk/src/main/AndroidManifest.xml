@@ -25,7 +25,7 @@
 
     <application>
         <service
-            android:name="io.livekit.android.room.track.screencapture.ScreenCaptureService"
+            android:name="com.applooma.rtc.transport.room.track.screencapture.ScreenCaptureService"
             android:enabled="true"
             android:foregroundServiceType="mediaProjection"
             android:stopWithTask="true" />

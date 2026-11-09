@@ -21,7 +21,7 @@ option go_package = "github.com/livekit/protocol/rpc";
 import "google/protobuf/empty.proto";
 import "google/protobuf/duration.proto";
 import "options.proto";
-import "livekit_sip.proto";
+import "sip.proto";
 
 service SIPInternal {
   rpc CreateSIPParticipant(InternalCreateSIPParticipantRequest) returns (InternalCreateSIPParticipantResponse) {

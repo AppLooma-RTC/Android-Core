@@ -19,7 +19,7 @@ package rpc;
 option go_package = "github.com/livekit/protocol/rpc";
 
 import "options.proto";
-import "livekit_egress.proto";
+import "egress.proto";
 
 service EgressInternal {
   rpc StartEgress(StartEgressRequest) returns (livekit.EgressInfo) {

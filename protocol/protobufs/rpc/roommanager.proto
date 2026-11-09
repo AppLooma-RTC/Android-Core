@@ -19,8 +19,8 @@ package rpc;
 option go_package = "github.com/livekit/protocol/rpc";
 
 import "options.proto";
-import "livekit_models.proto";
-import "livekit_room.proto";
+import "models.proto";
+import "room.proto";
 
 service RoomManager {
   rpc CreateRoom(livekit.CreateRoomRequest) returns (livekit.Room) {

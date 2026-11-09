@@ -19,8 +19,8 @@ package rpc;
 option go_package = "github.com/livekit/protocol/rpc";
 
 import "options.proto";
-import "livekit_internal.proto";
-import "livekit_rtc.proto";
+import "internal.proto";
+import "rtc.proto";
 
 service Signal {
   rpc RelaySignal(rpc.RelaySignalRequest) returns (rpc.RelaySignalResponse) {
